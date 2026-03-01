@@ -2,20 +2,19 @@
 <head>
 <style>
 body {
-    background-color: #3b3a3a;
-  margin: 0;
+ margin: 0;
   padding: 0;
 }
 
-
 ul {
-  list-style-type: none;
+  list-style: none;
   margin: 0;
   padding: 0;
-  overflow: hidden;
-  background-color: #333333;
+  background: #333;
   position: fixed;
+  top: 0;
   width: 100%;
+  height: 50px;
 }
 
 ul li {
@@ -25,26 +24,23 @@ ul li {
 ul li a {
   display: block;
   color: white;
-  text-align: center;
-  padding: 14px 9px;
+  padding: 15px 10px;
   text-decoration: none;
 }
 
-ul li a:hover:not(.active) {
-  background-color: #04AA6D;
+ul li a:hover {
+  background: #04AA6D;
 }
 
-ul li a.active {
-  background-color: #04AA6D;
-}
 #frameBox {
   position: fixed;
-  top: 50px;      
+  top: 50px;
   left: 0;
   width: 100%;
-  height: calc(100vh - 50px);  
+  height: calc(100vh - 50px);
   border: none;
 }
+
 </style>
 </head>
 <body>
@@ -52,7 +48,7 @@ ul li a.active {
   
 
 <ul>
-  <li><a class="active" href="book1-1.html">Home</a></li>
+  <li><a class="openPage active" href="book1-1.html">Home</a></li>
   <li><a class="openPage" href="wed6.html">wed6</a></li>
   <li><a class="openPage" href="wed5.html">wed5</a></li>
   <li><a class="openPage" href="wed3.html">wed3</a></li>
