@@ -48,7 +48,7 @@ ul li a:hover {
   
 
 <ul>
-  <li><a class="openPage active" href="book1-1.html">Home</a></li>
+  <li><a href="#" id="goHome">Home</a></li>
   <li><a class="openPage" href="wed6.html">wed6</a></li>
   <li><a class="openPage" href="wed5.html">wed5</a></li>
   <li><a class="openPage" href="wed3.html">wed3</a></li>
@@ -77,6 +77,12 @@ ul li a:hover {
                 document.getElementById("frameBox").src = this.href; 
             });
         });
+        
+document.getElementById("goHome").addEventListener("click", function(e){
+  e.preventDefault();
+  location.reload();
+});
+
 
 </script>
 </body>
